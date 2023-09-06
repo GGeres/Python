@@ -19,11 +19,19 @@ def palavra_secreta():
 
     p_secreta = palavras[num].upper()
 
+    return p_secreta
+
+def letras_acertada(palavra):
+    return ["_" for letra in palavra]
+
 def jogar():
     cabecalho()
+
     p_secreta = palavra_secreta()
 
-    l_acertadas = ["_" for letra in p_secreta]
+    l_acertadas = letras_acertada(p_secreta)
+
+
 
 
     erros = 0
