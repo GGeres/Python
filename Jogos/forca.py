@@ -86,6 +86,36 @@ def desenha_forca(erros):
     print("_|___         ")
     print()
 
+def venceu():
+    print("       ___________      ")
+    print("      '._==_==_=_.'     ")
+    print("      .-\\:      /-.    ")
+    print("     | (|:.     |) |    ")
+    print("      '-|:.     |-'     ")
+    print("        \\::.    /      ")
+    print("         '::. .'        ")
+    print("           ) (          ")
+    print("         _.' '._        ")
+    print("        '-------'       ")
+
+def perdeu():
+    print("    _______________         ")
+    print("   /               \       ")
+    print("  /                 \      ")
+    print("//                   \/\  ")
+    print("\|   XXXX     XXXX   | /   ")
+    print(" |   XXXX     XXXX   |/     ")
+    print(" |   XXX       XXX   |      ")
+    print(" |                   |      ")
+    print(" \__      XXX      __/     ")
+    print("   |\     XXX     /|       ")
+    print("   | |           | |        ")
+    print("   | I I I I I I I |        ")
+    print("   |  I I I I I I  |        ")
+    print("   \_             _/       ")
+    print("     \_         _/         ")
+    print("       \_______/           ")
+
 def jogar():
     cabecalho()
 
@@ -104,19 +134,22 @@ def jogar():
         if (chute in p_secreta):
             chute_correto(chute, l_acertadas, p_secreta)
         else:
+            desenha_forca(erros)
             erros += 1
-            print("Ops, você errou! Faltam {} tentativas".format(6-erros))
+            print("Ops, você errou! Faltam {} tentativas".format(8-erros))
 
 
-        if(erros == 6 or "_" not in l_acertadas):
+        if(erros == 8 or "_" not in l_acertadas):
             break
 
         print(l_acertadas)
 
     if("_" not in l_acertadas):
         print("Você ganhou. A palavra era: ",p_secreta)
+        venceu()
     else:
         print("Você perdeu. A palavra era: ",p_secreta)
+        perdeu()
 
     print("Fim de Jogo")
 
