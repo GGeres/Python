@@ -4,10 +4,6 @@ def jogar():
     print("*** Bem Vindo ao Jogo da Forca***")
     print("*********************************")
 
-    arquivo = open("palavras.txt", "w")
-    arquivo.write("banana\n")
-    arquivo.write("morango\n")
-    arquivo.write("manga\n")
 
     p_secreta = "banana".upper()
     l_acertadas = ["_" for letra in p_secreta]
