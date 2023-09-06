@@ -24,6 +24,18 @@ def palavra_secreta():
 def letras_acertada(palavra):
     return ["_" for letra in palavra]
 
+def pede_chute():
+    chute = input("Qual é a letra? ")
+    chute = chute.strip().upper()
+    return chute
+
+def chute_correto(chute, l_acertadas, p_secreta):
+    index = 0
+    for letra in p_secreta:
+        if (chute == letra):
+            l_acertadas[index] = letra
+        index += 1
+
 def jogar():
     cabecalho()
 
@@ -31,24 +43,16 @@ def jogar():
 
     l_acertadas = letras_acertada(p_secreta)
 
-
-
-
     erros = 0
     print(len(p_secreta))
     print(l_acertadas)
 
     while( True ):
 
-        chute = input("Qual é a letra? ")
-        chute = chute.strip().upper()
+        chute = pede_chute()
 
         if (chute in p_secreta):
-            index = 0
-            for letra in p_secreta:
-                if(chute == letra):
-                    l_acertadas[index] = letra
-                index += 1
+            chute_correto(chute, l_acertadas, p_secreta)
         else:
             erros += 1
             print("Ops, você errou! Faltam {} tentativas".format(6-erros))
