@@ -5,13 +5,11 @@ def jogar():
     print("*********************************")
 
     p_secreta = "banana".upper()
-    l_acertadas = ["_", "_", "_", "_", "_", "_"]
+    l_acertadas = ["_" for letra in p_secreta]
 
 
     erros = 0
     print(len(p_secreta))
-    print(l_acertadas)
-
     print(l_acertadas)
 
     while( True ):
