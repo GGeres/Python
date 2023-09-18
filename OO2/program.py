@@ -29,7 +29,7 @@ class Filme(Programa):
         super().__init__(nome, ano)
         self.duracao = duracao
     def __str__(self):
-        return f'Nome: {self.nome} - Ano: {self.ano} - Duração: {self.duracao} min'
+        return f'Nome: {self.nome} - Ano: {self.ano} - Duração: {self.duracao} min - {self.likes} Likes'
 
 class Serie(Programa):
     def __init__(self, nome, ano, temp):
@@ -38,13 +38,40 @@ class Serie(Programa):
     def __str__(self):
         return f'{self._nome} - {self.ano} - {self.temp} temporadas - {self.likes} Likes'
 
+class Playlist():
+    def __init__(self, nome, prog):
+        self.nome = nome
+        self.prog = prog
+
+    def tamanho(self):
+        return len(self.prog)
+
 senhor = Filme("o senhor dos anéis - a sociedade do anel",2001, 178)
-
-
 LOU = Serie("the last of us", 2023, 1)
+rocket = Filme("Rocketman", 2019, 121)
+mando = Serie("the mandalorian", 2019, 3)
+
+senhor.dar_like()
+senhor.dar_like()
+senhor.dar_like()
+senhor.dar_like()
+LOU.dar_like()
+LOU.dar_like()
+LOU.dar_like()
+mando.dar_like()
+mando.dar_like()
+mando.dar_like()
+mando.dar_like()
+mando.dar_like()
+rocket.dar_like()
+rocket.dar_like()
+rocket.dar_like()
+rocket.dar_like()
+rocket.dar_like()
 
 
-lista = [senhor, LOU]
+lista = [senhor, LOU, rocket, mando]
+my_playlist = Playlist("Fim de Semana",lista)
 
-for program in lista:
+for program in my_playlist.prog:
     print(program)

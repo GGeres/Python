@@ -48,7 +48,7 @@ def cab():
 def principal():
     cab()
     passo1()
-    
+
 if(__name__ == "__main__"):
     principal()
 
