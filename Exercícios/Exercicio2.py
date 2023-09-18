@@ -39,15 +39,16 @@ def finalizar():
     else:
         print("Obrigado por utilizar")
 
-def principal():
+
+def cab():
     print("*** Bem Vindo ao seu Conversor de Moedas ***")
     user = str(input("Digite seu nome: "))
     print(f'Bem vindo {user.title()}.')
 
+def principal():
+    cab()
     passo1()
-
-
-
+    
 if(__name__ == "__main__"):
     principal()
 
