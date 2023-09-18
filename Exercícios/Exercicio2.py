@@ -2,6 +2,7 @@ def pass1():
     qtd = float(input("Quanto você tem? R$ "))
 
     print(f'Você tem R$ {qtd}.')
+    return qtd
 
 
 def chama_conv(coin, qtd):
@@ -20,13 +21,21 @@ def chama_conv(coin, qtd):
 
     finalizar()
 
+def coin_select():
+    print("Qual moeda você quer comprar?")
+    coin = int(input("(1): Euro - (2): Dólar - (3): Libra\n"))
+    return coin
+
+
+
+
 def finalizar():
     print("Deseja usar novamente?")
 
     restart = int(input("(1) Sim - (2) Não\n"))
 
     if restart == 1:
-        chama_conv()
+        pass1()
     else:
         print("Obrigado por utilizar")
 
@@ -36,11 +45,9 @@ def principal():
     print(f'Bem vindo {user.title()}.')
 
     pass1()
+    coin_select()
+    chama_conv()
 
-    print("Qual moeda você quer comprar?")
-    coin = int(input("(1): Euro - (2): Dólar - (3): Libra\n"))
-
-    chama_conv(coin)
 
 
 if(__name__ == "__main__"):
