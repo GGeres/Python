@@ -14,8 +14,6 @@ class Programa:
     def dar_like(self):
         self._like += 1
 
-
-
     @property
     def nome(self):
         return self._nome
@@ -41,10 +39,14 @@ class Serie(Programa):
 class Playlist():
     def __init__(self, nome, prog):
         self.nome = nome
-        self.prog = prog
+        self._prog = prog
 
-    def tamanho(self):
-        return len(self.prog)
+    def __getitem__(self, item):
+        return self._prog[item]
+
+    def __len__(self):
+        return len(self._prog)
+
 
 senhor = Filme("o senhor dos anéis - a sociedade do anel",2001, 178)
 LOU = Serie("the last of us", 2023, 1)
@@ -73,5 +75,6 @@ rocket.dar_like()
 lista = [senhor, LOU, rocket, mando]
 my_playlist = Playlist("Fim de Semana",lista)
 
-for program in my_playlist.prog:
+for program in my_playlist:
     print(program)
+
