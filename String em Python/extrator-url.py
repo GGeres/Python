@@ -1,5 +1,9 @@
 url = "bytebank.com/cambio?quantidade=100&moedaDestino=dolar&moedaOrigem=real"
 
+#url = ""
+
+if url == "":
+    raise ValueError("A URL está vazia")
 
 ind_int = url.find('?')
 
