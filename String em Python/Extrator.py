@@ -1,7 +1,7 @@
 class ExtratorURL:
     def __init__(self, url):
         self.url = self.sanitiza_url(url)
-        self.valida_url
+        self.valida_url()
 
     def sanitiza_url(self, url):
         if type(url) == str:
@@ -32,6 +32,7 @@ class ExtratorURL:
         else:
             valor = self.get_url_param()[ind_valor:ind_e_com]
         return valor
+
 
 url = "bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar"
 extrator_url = ExtratorURL(url)
