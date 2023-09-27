@@ -27,6 +27,7 @@ class ExtratorURL:
         ind_param = self.get_url_param().find(param_busca)
         ind_valor = ind_param + len(param_busca) + 1
         ind_e_com = self.get_url_param().find('&', ind_valor)
+
         if ind_e_com == -1:
             valor = self.get_url_param()[ind_valor:]
         else:
@@ -34,7 +35,7 @@ class ExtratorURL:
         return valor
 
 
-url = "bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar"
+url = 'bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar'
 extrator_url = ExtratorURL(url)
-valor_quant = extrator_url.get_valor_param("quantidade")
+valor_quant = extrator_url.get_valor_param('quantidade')
 print(valor_quant)
