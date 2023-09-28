@@ -20,7 +20,7 @@ class ExtratorURL:
 
     def get_url_param(self):
         ind_int = self.url.find('?')
-        url_param = self.url[ind_int + 1]
+        url_param = self.url[ind_int + 1:]
         return url_param
 
     def get_valor_param(self, param_busca):
