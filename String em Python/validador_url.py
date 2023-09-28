@@ -16,5 +16,5 @@ Exemplos de URL inválidas:
     ht:bytebank.naoexiste/cambio
 '''
 
-padrao_url = re.compile("(http(s)?://)(www.)?bytebank.com(.br)?/cambio")
+padrao_url = re.compile("(http(s)?://)?(www.)?bytebank.com(.br)?/cambio")
 match = padrao_url.match()
