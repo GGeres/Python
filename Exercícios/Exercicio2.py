@@ -7,15 +7,15 @@ def passo1():
 
 def chama_conv(coin,qtd):
     if coin == 1:
-        y = 5.19
+        y = 5.32
         x = qtd
         print(f'Você pode comprar € {round(x / y,2 )}.')
     elif coin == 2:
-        y = 4.87
+        y = 5.03
         x = qtd
         print(f'Você pode comprar US$ {round(x / y,2 )}.')
     elif coin == 3:
-        y = 6.03
+        y = 6.14
         x = qtd
         print(f'Você pode comprar £$ {round(x / y,2 )}.')
 
