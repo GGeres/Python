@@ -1,6 +1,5 @@
+from validate_docbr import CPF
 from cpf import Cpf
 
-cpf = '42200696825'
-obj_cpf = Cpf(cpf)
-
-print(obj_cpf)
+cpf_um = Cpf("42200696825")
+print(cpf_um)
