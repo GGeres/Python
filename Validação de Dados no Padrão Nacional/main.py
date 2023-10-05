@@ -1,17 +1,10 @@
 from validate_docbr import CNPJ
 from cpf_cnpj import documento
 
-#cpf_um = Cpf("42200696825")
-#print(cpf_um)
+import re
 
-ex_cnpj = "35379838000112"
-
-ex_cpf = "42200696825"
-#cnpj = CNPJ()
-
-doc1 = documento.cria_doc(ex_cnpj)
-
-doc2 = documento.cria_doc(ex_cpf)
-
-print(doc1)
-print(doc2)
+padrao_molde = "(xx)aaaa-wwww"
+padrao = "[0-9]{2}[0-9]{4,5}[0-9]{4}"
+texto = "eu gosto de 11995217041"
+resposta = re.search(padrao, texto)
+print(resposta.group())
