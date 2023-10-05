@@ -2,11 +2,10 @@ from datetime import datetime, timedelta
 
 from datas_br import DatasBR
 
-#cadastro = DatasBR()
-#print(cadastro.dia_semana())
 
 cadastro = DatasBR
-cadastro.format_data()
+
+print(cadastro.format_data())
 
 hoje = datetime.today()
 hoje_formatada = hoje.strftime("%d/%m/%Y %H:%M")
