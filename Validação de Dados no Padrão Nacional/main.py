@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 from datas_br import DatasBR
 
 
-cadastro = DatasBR()
-print(cadastro.mes_cadastro())
+hoje = DatasBR()
+print(hoje.tempo_cadastro())
+
 
