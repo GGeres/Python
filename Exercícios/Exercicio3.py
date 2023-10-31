@@ -9,19 +9,26 @@
 
 # Exercício 2 acima
 
-#horas = ('Digite as horas: \n')
-#hour = input(horas)
-#taxa = ('Digite a taxa: \n')
-#pay = input(taxa)
-#payment = int(hour)*float(pay)
 
-#pFinal = ('O valor a ser pago será: R$ {}'.format(payment))
+horas = ('Digite as horas: \n')
+taxa = ('Digite a taxa: \n')
+if input(horas) == int and input(taxa) == float:
+    try:
+        hour = input(horas)
+        pay = input(taxa)
+        if int(hour) < 40:
+            payment = int(hour)*float(pay)
+        else:
+            payment = int(hour)*(float(pay)*1.5)
+        pFinal = ('O valor a ser pago será: R$ {}'.format(payment, round(2)))
+        print(pFinal)
+    except:
+        print('Erro!! Insira um número!')
 
-#print(pFinal)
 
 # Exercício 3 acima
 
-larg = 17
+'''larg = 17
 alt = 12.0
 
 ver1 = larg//2
@@ -39,5 +46,5 @@ print(type(ver3))
 ver4 = 1 + 2 * 5
 print(ver4)
 print(type(ver4))
-
+'''
 
