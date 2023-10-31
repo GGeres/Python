@@ -22,10 +22,22 @@
 # Exercício 3 acima
 
 larg = 17
-Alt = 12.0
+alt = 12.0
 
-ver1 = larg/2
+ver1 = larg//2
 print(ver1)
-type(ver1)
+print(type(ver1))
+
+ver2 = larg/2.0
+print(ver2)
+print(type(ver2))
+
+ver3 = alt/3
+print(ver3)
+print(type(ver3))
+
+ver4 = 1 + 2 * 5
+print(ver4)
+print(type(ver4))
 
 
