@@ -13,14 +13,18 @@
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
 hour = input(horas)
-pay = input(taxa)
 try:
-    if int(hour) < 40:
-        payment = int(hour)*float(pay)
-    else:
-        payment = int(hour)*(float(pay)*1.5)
-    pFinal = ('O valor a ser pago será: R$ {}'.format(payment, round(2)))
-    print(pFinal)
+    hour = int(hour)
+    pay = float(input(taxa))
+    try:
+        if int(hour) < 40:
+            payment = int(hour)*float(pay)
+        else:
+            payment = int(hour)*(float(pay)*1.5)
+        pFinal = ('O valor a ser pago será: R$ {}'.format(payment, round(2)))
+        print(pFinal)
+    except:
+        print('Erro!! Insira um número!')
 except:
     print('Erro!! Insira um número!')
 
@@ -46,6 +50,10 @@ ver4 = 1 + 2 * 5
 print(ver4)
 print(type(ver4))
 '''
+#Exercício 4 acima
+
+#Verificador de Notas:
+
 
 
 
