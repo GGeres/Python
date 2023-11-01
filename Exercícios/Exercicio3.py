@@ -100,6 +100,20 @@ for i in range(10):
 
 
 
+def repetir_Letra():
+    print_LetraSOAD()
+    print_LetraSOAD()
+
+def print_LetraSOAD():
+    print('Life is a Waterfall')
+    print('We´re one in the river and one again after the fall')
+
+print(repetir_Letra())
+
+
+
+
+
 
 
 
