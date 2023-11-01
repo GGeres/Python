@@ -88,9 +88,27 @@ except:
 '''
 #Exercício 5 acima
 
+'''
 import random
 
 for i in range(10):
-    x = random.random()
+    x = random.randint(1,5)
     print(x)
+'''
+#Exercício 6 acima
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
