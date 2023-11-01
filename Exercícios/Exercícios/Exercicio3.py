@@ -11,7 +11,7 @@ print(name)
 '''
 # Exercício 2 acima
 
-'''
+
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
 hour = input(horas)
@@ -22,14 +22,14 @@ try:
         if int(hour) < 40:
             payment = int(hour)*float(pay)
         else:
-            payment = int(hour)*(float(pay)*1.5)
+            payment = ((int(hour)-40)*1.5 + 40) * float(pay)
         pFinal = ('O valor a ser pago será: R$ {}'.format(payment, round(2)))
         print(pFinal)
     except:
         print('Erro!! Insira um número!')
 except:
     print('Erro!! Insira um número!')
-'''
+
 
 # Exercício 3 acima
 
