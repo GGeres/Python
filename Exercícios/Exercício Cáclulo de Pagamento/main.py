@@ -1,8 +1,6 @@
 from CalcPagamento import calculoPagamento
 
 
-
-
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
 hour = input(horas)
