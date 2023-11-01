@@ -11,7 +11,7 @@ print(name)
 '''
 # Exercício 2 acima
 
-
+'''
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
 hour = input(horas)
@@ -29,7 +29,7 @@ try:
         print('Erro!! Insira um número!')
 except:
     print('Erro!! Insira um número!')
-
+'''
 
 # Exercício 3 acima
 
