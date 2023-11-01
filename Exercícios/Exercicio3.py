@@ -12,18 +12,17 @@
 
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
-if input(horas) == int and input(taxa) == float:
-    try:
-        hour = input(horas)
-        pay = input(taxa)
-        if int(hour) < 40:
-            payment = int(hour)*float(pay)
-        else:
-            payment = int(hour)*(float(pay)*1.5)
-        pFinal = ('O valor a ser pago será: R$ {}'.format(payment, round(2)))
-        print(pFinal)
-    except:
-        print('Erro!! Insira um número!')
+try:
+    hour = input(horas)
+    pay = input(taxa)
+    if int(hour) < 40:
+        payment = int(hour)*float(pay)
+    else:
+        payment = int(hour)*(float(pay)*1.5)
+    pFinal = ('O valor a ser pago será: R$ {}'.format(payment, round(2)))
+    print(pFinal)
+except:
+    print('Erro!! Insira um número!')
 
 
 # Exercício 3 acima
