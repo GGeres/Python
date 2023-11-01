@@ -1,12 +1,14 @@
-#x = 43
-#x = x + 1
-#print(x)
-
+'''
+x = 43
+x = x + 1
+print(x)
+'''
 # Exercício 1 acima
 
-#name = input("Digite seu nome: \n")
-#print(name)
-
+'''
+name = input("Digite seu nome: \n")
+print(name)
+'''
 # Exercício 2 acima
 
 '''
@@ -62,7 +64,7 @@ Pontuação Nota
 >= 0.6 - D
  < 0.6 - F
 '''
-
+'''
 pontuacao = ('Digite a pontuação: ')
 ponto = input(pontuacao)
 
@@ -83,6 +85,12 @@ try:
         print('Pontuação Inválida!!')
 except:
     print('Pontuação Inválida!!')
-
+'''
 #Exercício 5 acima
+
+import random
+
+for i in range(10):
+    x = random.random()
+    print(x)
 
