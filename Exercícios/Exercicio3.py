@@ -9,7 +9,7 @@
 
 # Exercício 2 acima
 
-
+'''
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
 hour = input(horas)
@@ -27,7 +27,7 @@ try:
         print('Erro!! Insira um número!')
 except:
     print('Erro!! Insira um número!')
-
+'''
 
 # Exercício 3 acima
 
@@ -54,6 +54,35 @@ print(type(ver4))
 
 #Verificador de Notas:
 
+'''
+Pontuação Nota
+>= 0.9 - A
+>= 0.8 - B
+>= 0.7 - C
+>= 0.6 - D
+ < 0.6 - F
+'''
 
+pontuacao = ('Digite a pontuação: ')
+ponto = input(pontuacao)
 
+try:
+    ponto = float(ponto)
+    if ponto >= 0.0 and ponto <= 1.0:
+        if ponto < 0.6:
+            print("F")
+        elif ponto >= 0.6 and ponto < 0.7:
+            print('D')
+        elif ponto >= 0.7 and ponto < 0.8:
+            print('C')
+        elif ponto >= 0.8 and ponto < 0.9:
+            print('B')
+        elif ponto >= 0.9:
+            print('A')
+    else:
+        print('Pontuação Inválida!!')
+except:
+    print('Pontuação Inválida!!')
+
+#Exercício 5 acima
 
