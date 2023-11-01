@@ -12,9 +12,9 @@
 
 horas = ('Digite as horas: \n')
 taxa = ('Digite a taxa: \n')
+hour = input(horas)
+pay = input(taxa)
 try:
-    hour = input(horas)
-    pay = input(taxa)
     if int(hour) < 40:
         payment = int(hour)*float(pay)
     else:
@@ -46,4 +46,6 @@ ver4 = 1 + 2 * 5
 print(ver4)
 print(type(ver4))
 '''
+
+
 
