@@ -112,6 +112,21 @@ print(repetir_Letra())
 '''
 #Exercício 7 acima
 
+'''
+numero = input('Digite um número: ')
+x = int(numero)
+x = x + 1
+print(x)
+'''
+while True:
+    numero = input('Digite um número: ')
+    if numero == 'Pronto':
+        break
+    print(numero)
+print('End')
+
+
+
 
 
 
