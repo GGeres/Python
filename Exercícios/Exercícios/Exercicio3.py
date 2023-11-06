@@ -118,13 +118,19 @@ x = int(numero)
 x = x + 1
 print(x)
 '''
+
+
 while True:
     numero = input('Digite um número: ')
-    print(numero)
     if numero == 'Pronto':
         break
+print(numero)
 print('End')
 
+exemplo = 0
+for x in [exemplo]:
+    exemplo = exemplo + x
+print(exemplo)
 
 
 
