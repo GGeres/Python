@@ -8,7 +8,7 @@ try:
     hour = int(hour)
     pay = float(input(taxa))
     try:
-        calculoPagamento(hour,pay)
+        calculoPagamento(hour, pay)
     except:
         print('Erro!! Insira um número!')
 except:
