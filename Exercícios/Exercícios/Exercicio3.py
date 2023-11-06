@@ -120,9 +120,11 @@ print(x)
 '''
 while True:
     numero = input('Digite um número: ')
+    print(numero)
     if numero == 'Pronto':
         break
 print('End')
+
 
 
 
