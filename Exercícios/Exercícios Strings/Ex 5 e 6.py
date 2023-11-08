@@ -1,6 +1,7 @@
 #Exercício 5:
 
-exemplo = 'X-DSPAM-Confidence:0.8475'
+data = '0.8475'
+exemplo = 'X-DSPAM-Confidence:%s' %(data)
 
 last_part = exemplo.find(':')
 #print(last_part)
