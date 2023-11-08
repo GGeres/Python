@@ -41,9 +41,14 @@ print(palavra.count(caracter))
 '''
 
 #Operador de Formatação:
-'''%d para formatar números inteiros
-   %g para formatar números float
-   %s para formatar strings'''
+
+  #%d para formatar números inteiros
+  #%g para formatar números float
+  #%s para formatar strings
+
 camelos = 42
-frase = 'Eu vi %d camelos' % camelos
+animal = 'camelos'
+metade = 0.5
+
+frase = 'Eu vi %g de %d %s' % (metade, camelos, animal)
 print(frase)
