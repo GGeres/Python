@@ -41,4 +41,9 @@ print(palavra.count(caracter))
 '''
 
 #Operador de Formatação:
-
+'''%d para formatar números inteiros
+   %g para formatar números float
+   %s para formatar strings'''
+camelos = 42
+frase = 'Eu vi %d camelos' % camelos
+print(frase)
