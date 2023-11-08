@@ -33,3 +33,12 @@ contagem(palavra, caracter)
 '''
 
 #Exercício 4
+'''
+palavra = input('Digite uma palavra: \n')
+caracter = input('Qual letra você deseja contar? \n')
+
+print(palavra.count(caracter))
+'''
+
+#Operador de Formatação:
+
