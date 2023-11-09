@@ -23,6 +23,7 @@ Usa-se a função open()
 Indicado para contar o tamanho do arquivo.
 '''
 
+'''
 fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
@@ -34,3 +35,12 @@ for line in fhand:
     if line.startswith('Subject: '):
         count = count + 1
 print('There were ', count, 'subjects lines in ', fname)
+'''
+
+
+
+#Escrevendo arquivos:
+
+'''
+Utilizando a função open(), coloca-se no segundo parâmetro a letra 'w', ou modo 'w'
+'''
