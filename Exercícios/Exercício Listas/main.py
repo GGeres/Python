@@ -33,5 +33,18 @@ Adiciona um elemento ao final de uma lista.
 .extend
 extend leva uma lista como um argumento para o método append e adiciona todos
 os elementos o final de uma lista:
+Ex:
+t1 = ['Eren', 'Mikasa', 'Armin']
+t2 = ['Jean', 'Sasha', 'Connie']
+t1.extend(t2)
+print(t1)
+['Eren', 'Mikasa', 'Armin', 'Jean', 'Sasha', 'Connie']
+
+.sort
+Ordena uma lista do menor para o maior
+>>> t1 = ['5','3','9','1']
+>>> t1.sort()
+[1,3,5,9]
+
 '''
 
