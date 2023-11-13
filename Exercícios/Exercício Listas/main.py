@@ -1,12 +1,12 @@
 #Listas:
-
+'''
 aot = ['Eren', 'Mikasa', 'Armin']
 sec = ['Erwin', 'Levi', 'Hange']
 Paradis = aot + sec
 
 marley = ['Reiner', 'Annie', 'Bertholt', 'Ymir']
 print(Paradis[1:6])
-
+'''
 #Mutação de Listas:
 '''
 Em consoles, pode-se substituir os elementos de uma lista em 
@@ -73,6 +73,8 @@ Ele faz a somatoria dos elementos.
 E outras funções funcionam como funções de strings.
 
 '''
+#Exemplo sem Lista:
+'''
 total = 0
 count = 0
 while(True):
@@ -85,6 +87,24 @@ while(True):
 
 average = total/count
 print('Average: ', average)
+'''
+#Exemplo com Lista:
+
+numlist = list()
+while(True):
+    inp = input('Eneter a number: ')
+    if inp == 'done' or inp == 'Done':
+        break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist)/len(numlist)
+print('Average: ', average)
+
+#Listas e Strings:
+
+
+
 
 
 
