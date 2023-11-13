@@ -103,6 +103,19 @@ print('Average: ', average)
 
 #Listas e Strings:
 
+'''
+list()
+Função para converter uma string em uma lista de caracteres
+
+.split
+Método para quebrar string em palavras
+
+.join
+Método para juntar uma lista de palavras em uma string
+
+Argumento "Delimeter" em split para especificar qual caractere usa como
+limite de palavras
+'''
 
 
 
