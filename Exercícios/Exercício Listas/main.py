@@ -67,6 +67,9 @@ Para remover pelo elemento e não pelo índice.
 #Listas e Funções:
 '''
 sum()
+Funciona quando os elementos da lista são números
+Ele faz a somatoria dos elementos.
 
+E outras funções funcionam como funções de strings
 
 '''
