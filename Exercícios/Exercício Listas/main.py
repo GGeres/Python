@@ -2,8 +2,10 @@
 
 aot = ['Eren', 'Mikasa', 'Armin']
 sec = ['Erwin', 'Levi', 'Hange']
+Paradis = aot + sec
+
 marley = ['Reiner', 'Annie', 'Bertholt', 'Ymir']
-print(aot, sec, marley)
+print(Paradis[1:6])
 
 #Mutação de Listas:
 '''
@@ -18,5 +20,18 @@ Ex:
 >>> aot[1] = '4'
 >>> print(aot)
 ['1', '4', '3']
+
+Pode-se utilizar o IN em listas
+'''
+
+#Métodos de Listas:
+
+'''
+.append:
+Adiciona um elemento ao final de uma lista.
+
+.extend
+extend leva uma lista como um argumento para o método append e adiciona todos
+os elementos o final de uma lista:
 '''
 
