@@ -70,6 +70,21 @@ sum()
 Funciona quando os elementos da lista são números
 Ele faz a somatoria dos elementos.
 
-E outras funções funcionam como funções de strings
+E outras funções funcionam como funções de strings.
 
 '''
+total = 0
+count = 0
+while(True):
+    inp = input('Eneter a number: ')
+    if inp == 'done' or inp == 'Done':
+        break
+    value = float(inp)
+    total = total + value
+    count = count + 1
+
+average = total/count
+print('Average: ', average)
+
+
+
