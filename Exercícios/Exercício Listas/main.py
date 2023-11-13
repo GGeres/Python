@@ -48,3 +48,25 @@ Ordena uma lista do menor para o maior
 
 '''
 
+#Apagando Elementos:
+
+'''
+.pop
+Apaga um elemento da lista
+Modifica a lista e retorna o elemento que foi removido. Se você não fornecer
+um índice, ele deleta e retorna o último elemento da lista.
+
+.del
+Caso não precise do valor removido
+
+.remove
+Para remover pelo elemento e não pelo índice.
+
+'''
+
+#Listas e Funções:
+'''
+sum()
+
+
+'''
