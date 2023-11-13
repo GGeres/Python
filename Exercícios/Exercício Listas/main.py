@@ -89,7 +89,7 @@ average = total/count
 print('Average: ', average)
 '''
 #Exemplo com Lista:
-
+'''
 numlist = list()
 while(True):
     inp = input('Eneter a number: ')
@@ -100,7 +100,7 @@ while(True):
 
 average = sum(numlist)/len(numlist)
 print('Average: ', average)
-
+'''
 #Listas e Strings:
 
 '''
@@ -117,7 +117,35 @@ Argumento "Delimeter" em split para especificar qual caractere usa como
 limite de palavras
 '''
 
+#Objetos e Valores
 
+'''
+Uma lista nunca é igual a outra, mesmo que tenham os mesmos valores.
+'''
 
+#Aliados
 
+'''
+É a associação de uma variável a um objeto
+Ex:
+>>> a = [1, 2, 3]
+>>> b = a
+>>> b is a
+True
+'''
 
+#Listas como argumento
+
+'''
+Quando você passa uma lista como argumento de uma função, a função recebe uma
+referência a essa lista. Se a função modificar o parâmetro desta lista, o chamador
+verá a alteração.
+'''
+'''
+def remove_prim_elem(t):
+    del t[0]
+
+letras = ['a','b','c']
+remove_prim_elem(letras)
+print(letras)
+'''
