@@ -10,4 +10,6 @@ A associoção entre uma chave e um valor é chamado de ítem.
 
 Exemplo:
 Um dicionário para mapear palavras em Ingles para o Português.
+
+
 '''
