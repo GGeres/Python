@@ -25,14 +25,7 @@ print(d)
 '''
 
 #Exemplo para Leitura em Arquivos:
-fname = input('Enter the file name: ')
-try:
-    fhand = open(fname)
-except:
-    print('File cannot be opened:', fname)
-exit()
-
-fname = input('Enter the file name: ')
+'''fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
 except:
@@ -48,4 +41,12 @@ for line in fhand:
         else:
             counts[word] += 1
 
-print(counts)
+print(counts)'''
+
+#Laços e Dicionarios:
+conta = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+Ist = list(conta.keys())
+print(Ist)
+Ist.sort()
+for key in Ist:
+    print(key, conta[key])
