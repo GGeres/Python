@@ -13,3 +13,39 @@ Um dicionário para mapear palavras em Ingles para o Português.
 
 
 '''
+
+#Exemplo de Dicionário como Conjunto de Contadores:
+#Histograma
+'''
+word = 'Carnotauros'
+d = dict()
+for c in word:
+    d[c] = d.get(c,0) + 1
+print(d)
+'''
+
+#Exemplo para Leitura em Arquivos:
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened:', fname)
+exit()
+
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened:', fname)
+    exit()
+
+counts = dict()
+for line in fhand:
+    words = line.split()
+    for word in words:
+        if word not in counts:
+            counts[word] = 1
+        else:
+            counts[word] += 1
+
+print(counts)
