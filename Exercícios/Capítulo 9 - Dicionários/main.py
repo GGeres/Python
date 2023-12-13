@@ -25,7 +25,8 @@ print(d)
 '''
 
 #Exemplo para Leitura em Arquivos:
-'''fname = input('Enter the file name: ')
+'''
+fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
 except:
@@ -44,9 +45,37 @@ for line in fhand:
 print(counts)'''
 
 #Laços e Dicionarios:
-conta = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+'''conta = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 Ist = list(conta.keys())
 print(Ist)
 Ist.sort()
 for key in Ist:
-    print(key, conta[key])
+    print(key, conta[key])'''
+
+#Métodos Avançados de Divisão de Texto:
+
+import string
+
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened:', fname)
+    exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
