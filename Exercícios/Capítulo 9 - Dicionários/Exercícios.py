@@ -14,7 +14,6 @@ for line in fhand:
     line = line.rstrip()
     line = line.translate(line.maketrans('', '', string.punctuation))
     if line.startswith('From'):
-        media = 
     words = line.split()
     for word in words:
         if word not in conta:
@@ -24,3 +23,5 @@ for line in fhand:
 
         print(line)
 print(conta)
+
+#Terminar outra hora
