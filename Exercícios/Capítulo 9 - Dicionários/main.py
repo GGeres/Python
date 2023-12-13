@@ -63,6 +63,18 @@ except:
     print('File cannot be opened:', fname)
     exit()
 
+conta = dict()
+for line in fhand:
+    line = line.rstrip()
+    line = line.translate(line.maketrans('','', string.punctuation))
+    line = line.lower()
+    words = line.split()
+    for word in words:
+        if word not in conta:
+            conta[word] = 1
+        else:
+            conta[word] += 1
+print(conta)
 
 
 
@@ -77,5 +89,3 @@ except:
 
 
 
-
-    
