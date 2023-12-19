@@ -14,7 +14,7 @@ for line in fhand:
     line = line.rstrip()
     line = line.translate(line.maketrans('', '', string.punctuation))
     if line.startswith('From'):
-    words = line.split()
+        words = line.split()
     for word in words:
         if word not in conta:
             conta[word] = 1
