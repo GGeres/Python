@@ -1,0 +1,36 @@
+- Conceito
+    É uma sequência de valores muito parecido com uma lista.
+    Os valores podem ser de qualquer tipo, e eles são indexados por números
+    inteiros.
+    Elas são imutáveis
+    São comparáveis e hashable (ver o que significa) para que se possa ordenar
+    listas delas e usá-las como valores-chave em DICIONÁRIOS.
+
+- Sintaxe:
+    >>> t = 'a','b',...
+
+    Não é obrigatório, mas é comum colocá-las entre parênteses:
+    >>> t = ('a','b',...)
+
+    Para criar uma tupla com um único elemento, você precisa incluir a vírgula final:
+    >>> t1 = ('a',)
+    Sem a vírgula o Python trata ‘(’a’)’ como uma expressão com uma string entre
+    parênteses que é avaliada como uma string:
+
+    Outra maneira de construir uma tupla é a função interna ‘Tuple’. Sem nenhum
+    argumento, ele cria uma tupla vazia
+
+- Dicionários e Tuplas:
+    Os dicionários têm um método chamado items(atente-se à escrita deste método)
+    que retorna uma lista de tuplas, em que cada tupla é um par de valores-chave:
+    >>> d = {'a':10, 'b':1, 'c':22}
+    >>> t = list(d.items())
+    >>> print(t)
+    [('b', 1), ('a', 10), ('c', 22)]
+
+- Múltipla atribuição com Dicionários:
+    Combinando items, atribuição de tuplas e for, se tem um bom padrão de código
+    para percorrer as chaves e valores de um dicionário em um único loop:
+
+    for chave, valor in list(d.items()):
+    print(valor, chave)
