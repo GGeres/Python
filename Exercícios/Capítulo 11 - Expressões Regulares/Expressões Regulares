@@ -1,0 +1,8 @@
+Há uma biblioteca para tarefa de "PESQUISAR" e "EXTRAIR"
+
+Seja o básico:
+    A biblioteca é: "re"
+    'import re'
+
+    Função mais simples:
+    'search()'
