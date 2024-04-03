@@ -34,8 +34,6 @@ class Funcionario:
             decrescimo = self._salario * 0.1
             self._salario = self._salario - decrescimo
 
-
-
     def calcular_bonus(self):
         valor = self._salario * 0.1
         if valor > 1000:
