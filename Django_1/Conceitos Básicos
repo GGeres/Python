@@ -13,4 +13,5 @@ Django é um framework de desenvolvimento em Python
     Start Terminal: Ctrl+J
 
     python -m virtualenv --version
-    Django_1/venv/Scripts/Activate --> Ativar o venv
+    venv/Scripts/Activate --> Ativar o venv
+    Ctrl+L --> Clear
