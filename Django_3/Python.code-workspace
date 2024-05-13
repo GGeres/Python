@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../Django_1"
+		},
+		{
+			"path": "../Django_2"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
